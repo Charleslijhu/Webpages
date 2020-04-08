@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="default.css">
+		<script src="feedbackFormValidate.js"></script>
+		<form action="http://localhost/putMeIntoHtdocs/subscribe.php" method="get">
+		<title>Subscribe Newsletter</title>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="index.html">
+					<img src="logo.png" alt="logo" height="200" width="200" />
+				</a>
+			</div>
+			
+			<nav id="mainMenu">
+				<ul id="mainLinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="stock.html">Stock Info</a></li>	
+					<li><a href="register.html">Subscribe Newsletter</a></li>				
+				</ul>
+			</nav>
+		</header>
+
+		<content>
+			<main>
+				<br />
+				<br />
+				
+				<article id="subscribeIntro">
+					<p><b>Subscribe our monthly newsletter today</b> to receive</p>
+					<p>customized information available only to our subscribers.</p>
+				
+				</article>
+				
+				<form id="subscribeForm">
+					<br />
+					<p>Please enter your first name below.</p>
+					<input type="text" name="firstName" />
+					<br />
+					<p>Please enter your last name below.</p>
+					<input type="text" name="lastName" />
+					<br />
+					<p>Please enter your email below.</p>
+					<input type="text" name="email" />
+					<br />
+					<input type="submit" value="Subscribe"/>
+				</form>
+			</main>
+		</content>
+		
+		<footer>
+			<p class="c_fcopyright">© 2020 STANDARD & BULL'S. All Rights Reserved</p>
+		</footer>
+	</body>
+</html>

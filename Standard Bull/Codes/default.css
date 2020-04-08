@@ -1,0 +1,126 @@
+/* External_CSS.css for HopkinsTech*/
+
+/**********************************************************
+global settings to remove any default padding and margins */
+* {
+  padding: 0;
+  margin: 0;}
+
+/**********************************************************
+The following line may be redundant, but does no harm.    */
+main, header, footer, nav, article { display: block; }
+
+/********************************************************
+width and margin properties set here apply only to body;
+font properties set here will be inherited throughout   */
+body {
+	width: 900px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: Arial, sans-serif;
+	font-size: lem;}
+	
+/**************************************************
+individual element margins set by trial and error */
+h3 { margin: .5em 0 .2em; }
+p { margin: 0 .2em .7em 0; }
+
+/*********************************************
+company logo appears at the top of each page */
+div#logo { padding: 10px 0; }
+
+/***********
+main menu */
+nav#mainMenu { /* appears below logo on every page */
+  width: 100%;
+  height: 20px;
+}
+
+/**********************************
+menu links settings for each page*/
+nav ul { list-style: none; }
+
+nav ul li {
+  float: left;
+  width: 270px;
+  height: 25px;
+  border-right: 30px solid #FFF;
+  background-color: skyblue;
+  text-align: center;
+}
+
+nav ul li a {
+  color: darkslategray;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  padding: 2px 1px;
+  background-color: lightblue;
+  color: darkslategray;
+  font-weight: bolder;
+}
+
+/******************************************
+center text for each page except for Home*/
+div#titleCenterText {
+  color: cadetblue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9em;}
+  
+/************************************************************************
+center text for introduction of featured product picture except for Home*/
+div#introCenterText {
+  color: cadetblue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;}  
+ 
+/****************************************************************
+some pages have text at right and image at left in content area */
+article#textLeft {
+  float: left;
+  width: 70%;}
+  
+div#image {
+  float: left;
+  width: 30%;
+  margin-top: 20px;
+  text-align: center;}
+  
+  
+/****************************
+specs for different products*/
+div#specs {
+  color: darkslategray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;}  
+  
+/*********************************
+tables are of the format below */ 
+table{
+  margin: auto;
+  color: darkslategray;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.0em;
+  border: 1px solid #2F4F4F;
+  border-spacing: 50px;}
+	
+/*************************************
+footer contains the copyright notice*/
+footer {
+  float: left;
+  width: 880px;
+  height: 25px;
+  line-height: 25px;
+  border-right: 1px solid #FFF;
+  background-color: skyblue;
+  color: darkslategray;
+  text-align: center;
+  font-weight: bold;
+  font-size: .9em;}

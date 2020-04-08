@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="default.css">
+		<script src="feedbackFormValidate.js"></script>
+		<form action="http://localhost/putMeIntoHtdocs/stock.php" method="get">
+		<title>Stock Info</title>
+	</head>
+	
+	<body>
+		<header>
+			<br />
+			<br />
+			
+			<div id="logo">
+				<a href="index.html">
+					<img src="logo.png" alt="logo" height="200" width="200" />
+				</a>
+			</div>
+			
+			<nav id="mainMenu">
+				<ul id="mainLinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="stock.html">Stock Info</a></li>	
+					<li><a href="register.html">Subscribe Newsletter</a></li>				
+				</ul>
+			</nav>
+		</header>
+		
+		<content>
+			<main>
+				<div id="titleCenterText">
+					<br />
+					<h2>Stock Info</h2>
+					<br />
+					<h5>Please type in the stock ticker symbol over the search bar.</h5>
+					<br />
+					<p style="font-size: medium;">Our available info includes AMZN (Amazon), FB (Facebook), and AAPL (Apple)</p>
+				</div>
+				
+				<form action="" method="get" id="searchBar">
+					<table style="text-align: left;">
+						<tbody>							
+							<tr>
+								<td>Please Type the Ticker Symbol:</td>
+								<td>
+									<input type="text" name="tickerSymbol" />
+								</td>
+							</tr>
+							<tr>
+								<td>Please Choose the Info You Want to Know:</td>
+								<td>
+									<input type="checkbox" name="stockPrice" value="stockPrice" >Stock Price
+									<br />
+									<input type="checkbox" name="companySumInfo" value="companySumInfo" >Company Summary
+									<br />
+									<input type="checkbox" name="companyDetail" value="companyDetail" >Detailed Company Info
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="submit" value="Submit" onclick="formValidation()" />
+								</td>
+								<td class="RightAligned">
+									<input type="reset" value="Reset" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</main>
+		</content>
+		
+		<footer>
+			<p class="c_fcopyright">© 2020 STANDARD & BULL'S. All Rights Reserved</p>
+		</footer>
+	</body>
+</html>
